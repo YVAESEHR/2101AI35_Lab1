@@ -255,6 +255,15 @@ int main()
         printf("\n");
         break;
     }
+    case 6:
+    {
+        printf("EXITING...\n");
+        break;
+    }
+    default:
+    {
+        printf("Invalid sorttype.\nEXITING...\n");
+    }
     }
     return 0;
 }
