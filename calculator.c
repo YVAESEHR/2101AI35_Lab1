@@ -15,6 +15,11 @@ float multiply(float a, float b)
         return a * b;
     }
 
+float divide(float a, float b)
+    {
+        return a / b;
+    }
+
 int main()
 {
     printf("Choose an operation (+,-,*,/) : ");
@@ -39,6 +44,12 @@ int main()
         float num5, num6;
         scanf("%f %f", &num5, &num6);
         printf("The product of %f and %f is : %f\n", num5, num6, multiply(num5, num6));
+        break;
+    case '/':
+        printf("Enter two numbers to divide :\n");
+        float num7, num8;
+        scanf("%f %f", &num7, &num8);
+        printf("The division of %f and %f is : %f\n", num7, num8, divide(num7, num8));
         break;
     return 0;
 }
