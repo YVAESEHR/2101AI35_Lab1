@@ -51,5 +51,9 @@ int main()
         scanf("%f %f", &num7, &num8);
         printf("The division of %f and %f is : %f\n", num7, num8, divide(num7, num8));
         break;
+    default:
+        printf("Invalid operation...\nEXITING...\n");
+        break;
+    }
     return 0;
 }
