@@ -10,6 +10,11 @@ float subtract(float a, float b)
         return a - b;
     }
 
+float multiply(float a, float b)
+    {
+        return a * b;
+    }
+
 int main()
 {
     printf("Choose an operation (+,-,*,/) : ");
@@ -28,6 +33,12 @@ int main()
         float num3, num4;
         scanf("%f %f", &num3, &num4);
         printf("The difference of %f and %f is : %f\n", num3, num4, subtract(num3, num4));
+        break;
+    case '*':
+        printf("Enter two numbers to multiply :\n");
+        float num5, num6;
+        scanf("%f %f", &num5, &num6);
+        printf("The product of %f and %f is : %f\n", num5, num6, multiply(num5, num6));
         break;
     return 0;
 }
